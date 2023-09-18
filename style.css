@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.bulb{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bulb img{
+    height: 350px;
+    width: 350px;
+    filter: drop-shadow(8px 8px  1px gray);
+}
+button{
+    height: 66px;
+    width: 90px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top:210px ;
+    right:210px;
+
+    background-color:rgb(0, 214, 0);
+    border:2px solid rgb(120, 104, 104);
+    border-radius:40%;
+}
+@media only screen and (max-width: 600px){
+
+    .bulb{
+        height:100%
+        width:100%;
+        border: 2px solid red;
+
+    }
+    .bulb img{
+        transform: rotate(180deg);
+        position: absolute;
+        top: 22px;
+    }
+button{
+    position: absolute;
+    top: 650px;
+    left: 120px;
+    height:77px;
+    width: 160px;
+}
+}
